@@ -57,7 +57,7 @@ mv /tmp/ca.pem certs/ca.pem
 mv /tmp/client.pem certs/client.pem
 mv /tmp/server.pem certs/server.pem
 
-mv /tmp/ca.free.key certs/keys/ca.key
+mv /tmp/ca.key certs/keys/ca.key
 mv /tmp/client.key certs/keys/client.key
 mv /tmp/server.key certs/keys/server.key
 ```
