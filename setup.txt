@@ -1,0 +1,9 @@
+./easyrsa init-pki
+./easyrsa build-ca
+./easyrsa gen-req client.example.com
+./easyrsa gen-req server.example.com
+./easyrsa sign-req client client.example.com
+./easyrsa sign-req server server.example.com
+openssl rsa -in pki/private/ca.key > pki/private/ca.free.key
+openssl rsa -in pki/private/client.example.com.key > pki/private/client.example.com.free.key
+openssl rsa -in pki/private/server.example.com.key > pki/private/server.example.com.free.key
